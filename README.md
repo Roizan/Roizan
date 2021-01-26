@@ -12,7 +12,8 @@ class About extends Me
         return [
             'workplace' => [
                 'company' => 'Seitwerk',
-                'position' => 'Software & Systems Engineer - Instructor'         
+                'position' => 'Senior Software & Systems Engineer - Instructor',
+                'fuel' => 'Espresso Shots' 
             ]
         ];
     }
@@ -24,8 +25,11 @@ class About extends Me
             Zend::class,
             Symfony::class,
             Bash::class,
+            Gitlab::class,
             Docker::class,
             Azure::class,
+            CommandLine::class,
+            CICD::class
         ];
     }
 
@@ -33,6 +37,16 @@ class About extends Me
     {
         return 'Spark the joy of IT in my apprentices ;)';
     }
+    
+    public function getSportsAndHobbies(): array
+    {
+        return [
+            CrossFit::class,
+            Rowing::class,
+            Motorcycles::class
+        ];
+    }
 }
 ```
 
+:motorcycle: :motorcycle: :motorcycle: 
