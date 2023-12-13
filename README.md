@@ -11,8 +11,8 @@ class About extends Me
     {
         return [
             'workplace' => [
-                'company' => 'Seitwerk',
-                'position' => 'Senior Software & Systems Engineer - Instructor',
+                'company' => 'SWM - Stadtwerke München',
+                'position' => 'Cloud Engineer',
                 'fuel' => 'Espresso Shots' 
             ]
         ];
@@ -21,21 +21,31 @@ class About extends Me
     public function getDailyKnowledge(): array
     {
         return [
-            Php::class,
-            Zend::class,
-            Symfony::class,
+            Terraform::class,
             Bash::class,
             Gitlab::class,
             Docker::class,
             Azure::class,
+            AWS::class,
+            GoogleCloudServices::class,
             CommandLine::class,
             CICD::class
         ];
     }
 
+    public function getLegacyKnowledge(): array
+    {
+        return [
+            Php::class,
+            Zend::class,
+            Symfony::class,
+            SoftwareArchitecture::class,
+        ];
+    }
+
     public function getFutureGoal(): string
     {
-        return 'Spark the joy of IT in my apprentices ;)';
+        return 'Beeing a part of changing the world to a greener and more sustainable future, while still trying to spark the joy of IT in my apprentices ;)';
     }
     
     public function getSportsAndHobbies(): array
